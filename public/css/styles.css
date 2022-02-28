@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;900&family=Comfortaa&family=Montserrat:wght@300;400;500;600&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,600&family=Source+Sans+Pro&display=swap');
 
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button { 
+    outline: none;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.main {
+
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -20,10 +57,84 @@ nav ul {
 .active {
     background-color: rgb(252, 195, 73);
     color: #ffffff;
-    box-shadow: 5px 10px 30px rgba(198, 167, 64, 0.411);
+    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
     transition: all ease 0.2s;
 }
 
 nav ul li a {
+    font-family: calibri;
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
 
+.hey {
+    font-family: calibri;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #000266;
+}
+
+nav ul li a:hover {
+    background-color: rgb(252, 195, 73);
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
+    transition: all ease 0.2s;
+}
+
+nav .menu-btn,
+.menu-icon {
+    display: none;
+}
+
+@media(max-width:1100px) {.menu-icon{
+    display:block;}
+        nav {
+            justify-content: space-between;
+            height: 65px;
+            padding: 0px 30px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0px;
+            background-color: #000000;
+            border-bottom: 4px solid rgb(252, 195, 73);
+            width: 100px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu li {
+            width: 100%;
+        }
+
+        nav .menu li a {
+            width: 100%;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 25px;
+            border: 1px solid #252525;
+        }
+
+        nav .menu-icon {
+            cursor: pointer;
+            float: right;
+            padding: 28px 20px;
+            
+        }
 }
