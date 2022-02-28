@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;900&family=Comfortaa&family=Montserrat:wght@300;400;500;600&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,600&family=Source+Sans+Pro&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
+
+nav ul {
+    display: flex;
+}
+
+.active {
+    background-color: rgb(252, 195, 73);
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(198, 167, 64, 0.411);
+    transition: all ease 0.2s;
+}
+
+nav ul li a {
+
+}
