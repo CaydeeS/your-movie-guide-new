@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;900&family=Comfortaa&family=Montserrat:wght@300;400;500;600&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,600&family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button { 
+    outline: none;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.main {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+
+.main-heading {
+    font-family: 'Montserrat';
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background: #000000b0;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.main-heading span {
+    color: rgb(252, 195, 73);
+    border-bottom: 2px solid rgb(252, 195, 73);
+}
+
+.main-heading .details {
+    color: #d8d8d8;
+}
+
+.main-heading h1 {
+    font-family: 'Montserrat';
+    font-size: 46px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.header-btns {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 36%;
+}
+
+.header-btn {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(235, 183, 70);
+    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
+    border-radius: 10px;
+    color: rgb(245, 245, 245);
+}
+
+.header-btn:hover {
+    background-color: #fff;
+    color:rgb(252, 195, 73);
+    transition: all ease 0.6s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.336);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
+
+nav ul {
+    display: flex;
+}
+
+.active {
+    background-color: rgb(252, 195, 73);
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
+    transition: all ease 0.2s;
+}
+
+nav ul li a {
+    font-family: calibri;
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.hey {
+    font-family: calibri;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #000266;
+}
+
+nav ul li a:hover {
+    background-color: rgb(207, 160, 57);
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
+    transition: all ease 0.2s;
+}
+
+nav .menu-btn,
+.menu-icon {
+    display: none;
+}
+
+#current {
+    width: 100%;
+    height: 120vh;
+    background-color:rgb(207, 160, 57);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+}
+
+.current-text {
+    width: 45%;
+    color: #fff;
+}
+
+.current-text h2 {
+    font-size: 2.3rem;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.current-text p {
+    font: 1.2rem;
+    color: #e2e2e2;
+}
+
+.current-image {
+    width: 50%;
+}
+
+.current-image img {
+    width: 400px;
+}
+
+.watch {
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/images/tyson-moultrie-BQTHOGNHo08-unsplash.jpg);
+}
+
+#movies {
+    width: 100%;
+    height: 190vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.m-heading h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-box {
+    background-color: #fff;
+    width: 285px;
+    height: 470px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.movie-image {
+    width: 100%;
+    height: 85%;
+}
+
+.movie-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-call {
+    width: 100%;
+    height: 13%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(max-width:1100px) {.menu-icon{
+    display:block;}
+        nav {
+            justify-content: space-between;
+            height: 65px;
+            padding: 0px 30px;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0px;
+            background-color: #000000;
+            border-bottom: 4px solid rgb(252, 195, 73);
+            width: 100px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu li {
+            width: 100%;
+        }
+
+        nav .menu li a {
+            width: 100%;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 25px;
+            border: 1px solid #252525;
+        }
+
+        nav .menu-icon {
+            cursor: pointer;
+            float: right;
+            padding: 28px 20px;
+            position: relative;
+            user-select: none;
+        }
+
+        nav .menu-icon .nav-icon {
+            background-color: #ffffff;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background 0.2s ease-out;
+            width: 18px;
+        }
+
+        nav .menu-icon .nav-icon:before,
+        nav .menu-icon .nav-icon:after {
+            background: rgb(255, 255, 255);
+            content:'';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all ease-out 0.2s;
+            width: 100%;
+        }
+
+        nav .menu-icon .nav-icon:before {
+            top: 5px;
+        }
+
+        nav .menu-btn:checked ~ .menu-icon .nav-icon {
+            background: transparent;
+        }
+
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        nav .menu-btn {
+            display: none;
+        }
+
+        nav .menu-btn:checked ~ .menu {
+            display: block;
+        }
+}
