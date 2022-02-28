@@ -15,8 +15,8 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const Movies = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const Movies = dbmoviedata.map((movies) =>
+      movies.get({ plain: true })
     );
 
     res.render('homepage', {
