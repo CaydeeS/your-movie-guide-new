@@ -15,12 +15,12 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
+    const Movies = dbGalleryData.map((gallery) =>
       gallery.get({ plain: true })
     );
 
     res.render('homepage', {
-      galleries,
+      mov,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -31,9 +31,9 @@ router.get('/', async (req, res) => {
 
 // GET one gallery
 // Use the custom middleware before allowing the user to access the gallery
-router.get('/gallery/:id', withAuth, async (req, res) => {
+router.get('/movie/:id', withAuth, async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findByPk(req.params.id, {
+    const moviesdata = await Movies.findByPk(req.params.id, {
       include: [
         {
           model: Painting,
