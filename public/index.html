@@ -20,48 +20,47 @@
 
             <ul class="menu">
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Current Movie</a></li>
-                <li><a href="#">Watch List</a></li>
-                <li><a href="#">Recommendations</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="#current">Current Movie</a></li>
+                <li><a href="#watch">Watch List</a></li>
+                <li><a href="#movies">Recommendations</a></li>
+                <li><a href="logout.js">Log Out</a></li>
             </ul>
         </nav>
-        <div class="main-heading">
-            <h1>Current Movie <span>You're Watching</span></h1>
-            <p class="details">Movie summary will go here. Something very short and simple about movie.</p>
-            <div class ="header-btns">
-                <a href="#" class="header-btn">About Film</a>
+        
+        <section id="current">
+            <div class="current-image">
+                <img src=''>
             </div>
-        </div>
-    </section>
+            <div class="current-text">
+                <h2>The Current Movie Title</h2>
+                <p>
+                    "In short, the plot is what happens in a film, 
+                    i.e. the narrative sequence of events that 
+                    determine the outcome of the characters. 
+                    Thus, movie plots are the events that happen, 
+                    in sequence, in order to show a cause and effect."
+                </p>
+            </div>
+        </section>
+        
+        <div class="main-heading" id="watch">
+            <h1>Your Movies <span>Watch List</span></h1>
 
-    <section id="current">
-        <div class="current-image">
-            <img src=''>
-        </div>
-        <div class="current-text">
-            <h2>The Current Movie Title</h2>
-            <p>
-                "In short, the plot is what happens in a film, 
-                i.e. the narrative sequence of events that 
-                determine the outcome of the characters. 
-                Thus, movie plots are the events that happen, 
-                in sequence, in order to show a cause and effect."
-            </p>
-        </div>
-    </section>
+            <input class="details" type="checkbox">
+            <p>movie title</p>
 
-    <section class="watch">
-        <div class="watch-List">
-            <h1>Your Movie <span>Watch List</span></h1>
-            <ul>
-                <li><input type="checkbox">Movie Tile</li>
-                <li><input type="checkbox">Movie Tile</li>
-                <li><input type="checkbox">Movie Tile</li>
-                <li><input type="checkbox">Movie Tile</li>
-                <li><input type="checkbox">Movie Tile</li>
-                <li><input type="checkbox">Movie Tile</li>
-            </ul>
+            <input class="details" type="checkbox">
+            <p>movie title</p>
+
+            <input class="details" type="checkbox">
+            <p>movie title</p>
+
+            <input class="details" type="checkbox">
+            <p>movie title</p>
+            
+            <div class ="header-btns">
+                <a href="#" class="header-btn">Save</a>
+            </div>
         </div>
     </section>
 
