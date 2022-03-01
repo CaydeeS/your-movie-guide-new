@@ -45,38 +45,10 @@ input {
     position: relative;
 }
 
-.main-heading {
-    font-family: 'Montserrat';
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    background: #000000b0;
-    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.main-heading span {
-    color: rgb(252, 195, 73);
-    border-bottom: 2px solid rgb(252, 195, 73);
-}
-
-.main-heading .details {
-    color: #d8d8d8;
-}
-
-.main-heading h1 {
-    font-family: 'Montserrat';
-    font-size: 46px;
-    margin: 0px;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
 .header-btns {
     display: flex;
     margin-top: 40px;
+    margin-bottom: 20px;
     margin-left: 36%;
 }
 
@@ -97,6 +69,8 @@ input {
     color:rgb(252, 195, 73);
     transition: all ease 0.6s;
 }
+
+/************NAVIGATION************/
 
 nav {
     display: flex;
@@ -138,14 +112,6 @@ nav ul li a {
     transition: 0.2s ease-in-out;
 }
 
-.hey {
-    font-family: calibri;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-bottom: 2px solid #000266;
-}
-
 nav ul li a:hover {
     background-color: rgb(207, 160, 57);
     color: #ffffff;
@@ -157,6 +123,8 @@ nav .menu-btn,
 .menu-icon {
     display: none;
 }
+
+/************CURRENT MOVIE************/
 
 #current {
     width: 100%;
@@ -195,6 +163,43 @@ nav .menu-btn,
 .current-image img {
     width: 400px;
 }
+
+/************WATCH LIST************/
+
+.watch-list {
+    font-family: 'Montserrat';
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background: #000000b0;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.watch-list span {
+    color: rgb(252, 195, 73);
+    border-bottom: 2px solid rgb(252, 195, 73);
+}
+
+.watch-list .details {
+    color: #d8d8d8;
+}
+
+.watch-list h1 {
+    font-family: 'Montserrat';
+    font-size: 46px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.watch-list p {
+    color: #fff;
+}
+
+/************RECOMMENDATIONS************/
 
 #movies {
     width: 100%;
@@ -250,6 +255,8 @@ nav .menu-btn,
     align-items: center;
     flex-direction: column;
 }
+
+/************RESPONSIVE************/
 
 @media(max-width:1100px) {.menu-icon{
     display:block;}
