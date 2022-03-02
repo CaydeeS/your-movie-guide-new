@@ -59,9 +59,8 @@ input {
     justify-content: center;
     align-items: center;
     background-color:rgb(235, 183, 70);
-    box-shadow: 5px 10px 30px rgba(211, 163, 60, 0.411);
     border-radius: 10px;
-    color: rgb(245, 245, 245);
+    color: black;
 }
 
 .header-btn:hover {
@@ -200,67 +199,11 @@ nav .menu-btn,
     color: #fff;
 }
 
-/************RECOMMENDATIONS************
 
-#movies {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-}
-
-.m-heading h1 {
-    color: #fff;
-    font-size: 3rem;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-.movie-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.movie-box {
-    background-color: #fff;
-    width: 285px;
-    height: 470px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
-    position: relative;
-}
-
-.movie-image {
-    width: 100%;
-    height: 85%;
-}
-
-.movie-image img {
-    width: 100%;
-    height: 100%;
-}
-
-.movie-call {
-    width: 100%;
-    height: 13%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-************SEARCH ENGINE************/
+/************SEARCH ENGINE************/
 
 #search {
-    background-color: rgb(252, 195, 73);
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +216,7 @@ nav .menu-btn,
 #search h3 {
     font-size: 2.5rem;
     margin: 20px;
-    color: black;
+    color: rgb(252, 195, 73);
 }
 
 .search-input {
@@ -322,18 +265,6 @@ nav .menu-btn,
 
     .current-image img {
         height: 400px;
-    }
-
-    #movies {
-        height: auto;
-    }
-
-    .movie-container {
-        flex-wrap: wrap;
-    }
-
-    .movie-image img {
-        object-fit: cover;
     }
 }
 
