@@ -1,6 +1,6 @@
 :root {
   --primary: #e2be49;
-  --secondary: #939286;
+  --secondary: #202020;
   --tertiary: #877f5e;
   --quatrinary: #000000;
   --light: #ffffff;
@@ -66,16 +66,6 @@ nav a:hover {
   background-color: var(--dark);
 }
 
-.gallery {
-  flex: 4;
-  background-color: #fff;
-  padding: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn-no-style {
   background: none;
   border: none;
@@ -90,19 +80,6 @@ nav a:hover {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
 }
 
 /* CARDS */
