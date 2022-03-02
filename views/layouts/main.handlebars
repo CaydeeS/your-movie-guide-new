@@ -1,37 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Movie Guide</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Movie Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <a href="#" class="logo">
-    <img src="./images/Your Movie Guide (2).png" alt="logo"/>
-  </a>
-  <nav>
-    <a href="#">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      <h2>Your Movie Watch List</h2>
-    </aside>
-    <div class="gallery">
-      {{{body}}}
-    </div>
-  </main>
-  {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+    <section class="main">
+        <nav>
+            <a href="#" class="logo">
+                <img src="./images/Your Movie Guide (2).png" alt="logo"/>
+            </a>
 
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#watch">Watch List</a></li>
+                <li><a href="#current">Current Movie</a></li>
+                <li><a href="#movies">Recommendations</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="logout.js">Log Out</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="watch-list" id="watch">
+        <h1>Your Movies <span>Watch List</span></h1>
+
+        <input class="details" type="checkbox">
+        <p>movie title</p>
+
+        <input class="details" type="checkbox">
+        <p>movie title</p>
+
+        <input class="details" type="checkbox">
+        <p>movie title</p>
+
+        <input class="details" type="checkbox">
+        <p>movie title</p>
+        
+        <div class ="header-btns">
+            <a href="#" class="header-btn">Add New Movie</a>
+        </div>
+    </section>
+
+    <section id="current">
+        <div class="current-image">
+            <img src="">
+        </div>
+        <div class="current-text">
+            <h2>The Current Movie Title</h2>
+            <p>
+                "In short, the plot is what happens in a film, 
+                i.e. the narrative sequence of events that 
+                determine the outcome of the characters. 
+                Thus, movie plots are the events that happen, 
+                in sequence, in order to show a cause and effect."
+            </p>
+        </div>
+    </section>
+
+    <section id="movies">
+        <div class="m-heading">
+            <h1>Recommendations</h1>
+        </div>
+        <div class="movie-container">
+
+            <div class="movie-box">
+                <div class="movie-image">
+                    <img src="">
+                </div>
+            </div>
+            <div class="movie-call">
+                <a href="#" class="header-btn">Add to Watch</a>
+            </div>
+
+            <div class="movie-box">
+                <div class="movie-image">
+                    <img src="">
+                </div>
+            </div>
+            <div class="movie-call">
+                <a href="#" class="header-btn">Add to Watch</a>
+            </div>
+
+            <div class="movie-box">
+                <div class="movie-image">
+                    <img src="">
+                </div>
+            </div>
+            <div class="movie-call">
+                <a href="#" class="header-btn">Add to Watch</a>
+            </div>
+
+            <div class="movie-box">
+                <div class="movie-image">
+                    <img src="">
+                </div>
+            </div>
+            <div class="movie-call">
+                <a href="#" class="header-btn">Add to Watch</a>
+            </div>
+
+            <div class="movie-box">
+                <div class="movie-image">
+                    <img src="">
+                </div>
+            </div>
+            <div class="movie-call">
+                <a href="#" class="header-btn">Add to Watch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <h3>Search for a Movie</h3>
+        <div class="search-input">
+            <input type="text" placeholder="Movie Title">
+            <a href="#" >Search</a>
+        </div>
+    </section>
+    <script src="./movie-routes.js"></script>
+</body>
 </html>
