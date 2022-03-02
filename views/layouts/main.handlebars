@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
+  <title>Your Movie Guide</title>
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
-  </header>
+  <a href="#" class="logo">
+    <img src="./images/Your Movie Guide (2).png" alt="logo"/>
+  </a>
   <nav>
-    <a href="/">Home</a>
+    <a href="#">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
@@ -23,7 +23,7 @@
   </nav>
   <main>
     <aside>
-      <h2>Enjoy the galleries!</h2>
+      <h2>Your Movie Watch List</h2>
     </aside>
     <div class="gallery">
       {{{body}}}
