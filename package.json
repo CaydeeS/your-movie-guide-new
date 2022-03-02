@@ -15,7 +15,11 @@
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.3",
+<<<<<<< HEAD
     "express-handlebars": "^5.3.5",
+=======
+    "express-handlebars": "^5.2.0",
+>>>>>>> 7454feff32a98f0a56912bcf8ce3e3d74322dc82
     "express-session": "^1.17.1",
     "handlebars": "^4.7.6",
     "heroku": "^7.33.3",
