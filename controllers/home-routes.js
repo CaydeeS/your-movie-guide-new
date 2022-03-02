@@ -14,16 +14,9 @@ router.get('/', (req, res) => {
   res.render('homepage');
 });
 
-router.get('/watchlist', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
+// Use the custom middleware before allowing the user to access the painting
 
-  res.render('watchlist');
-});
-
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
