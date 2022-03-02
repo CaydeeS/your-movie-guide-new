@@ -200,7 +200,7 @@ nav .menu-btn,
     color: #fff;
 }
 
-/************RECOMMENDATIONS************/
+/************RECOMMENDATIONS************
 
 #movies {
     width: 100%;
@@ -257,7 +257,7 @@ nav .menu-btn,
     flex-direction: column;
 }
 
-/************SEARCH ENGINE************/
+************SEARCH ENGINE************/
 
 #search {
     background-color: rgb(252, 195, 73);
