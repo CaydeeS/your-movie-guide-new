@@ -167,14 +167,12 @@ nav .menu-btn,
 
 .watch-list {
     font-family: 'Montserrat';
+    box-sizing: border-box;
     width: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    position: fixed;
+    bottom: 55%;
+    left: 10%;
     text-align: center;
-    transform: translate(-50%,-50%);
-    background: black;
-    box-shadow: 5px 10px 30px #000000b0;
 }
 
 .watch-list span {
