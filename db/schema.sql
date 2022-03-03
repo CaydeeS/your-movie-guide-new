@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS movietrack_db;
+DROP DATABASE IF EXISTS films_db;
 
-CREATE DATABASE movietrack_db;
+CREATE DATABASE films_db;
