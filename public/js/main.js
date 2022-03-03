@@ -12,6 +12,6 @@ app.engine('handlebars', expbs({
 app.set('view engine', 'handlebars');
 
 //routing
-app.get('/', (req, res) => {
+app.get('/watchlist', (req, res) => {
     res.render('watchlist', { title: 'Watch List' });
 });
