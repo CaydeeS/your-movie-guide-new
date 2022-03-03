@@ -1,18 +1,26 @@
 {{!-- //this is where we want the form to append a card to --}}
 <link rel="stylesheet" type="text/css" href="/css/watchlist.css">
 
-<form action="/my-handling-form-page" method="post">
+<div class="watch-list">
+    <h1>YOUR MOVIES <span>WATCH LIST</span></h1>
+    <p class="details">Keep track of the movies you have recently watched. Add a movie to your list by clicking the button below.</p>
+    <div class="header-btns">
+        <a href="#watch-form" class="header-btn">Add a Movie</a>
+    </div>
+</div>
+<form id="watch-form" action="/my-handling-form-page" method="post">
+    <h1>YOUR MOVIES <span>WATCH LIST</span></h1>
     <ul>
         <li>
-            <label for="watched">Recently Watched:</label>
+            <label id="watch-text" for="watched">Recently Watched:</label>
             <input type="text" id="watched" name="user-watched">
         </li>
         <li>
-            <label for="genre">Movie Genre:</label>
+            <label id="watch-text" for="genre">Movie Genre:</label>
             <input type="text" id="genre" name="user_genre">
         </li>
         <li>
-            <label for="rating">Movie Rating:</label>
+            <label id="watch-text" for="rating">Movie Rating:</label>
             <textarea id="text" name="user_rating"></textarea>
         </li>
         <li class="button">

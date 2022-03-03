@@ -1,10 +1,46 @@
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 200px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+#watch-form {
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+}
+
+#watch-text {
+  display: block;
+  font-size: 30px;
+  color: rgb(252, 195, 73);
+}
+
+span {
+  color: rgb(252, 195, 73);
+  border-bottom: 2px solid rgb(252, 195, 73);
+} 
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 46px;
+  margin: 0px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+button {
+  width: 200px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(252, 195, 73);
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+#watch-form {
+  display: none;
+}
