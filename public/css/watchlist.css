@@ -1,18 +1,28 @@
 #watch-form {
+  opacity: 0;
+  visibility: hidden;
   width: 500px;
   height: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 20px;
   background-color: black;
   border-radius: 3px;
+  transition: .3s ease-in;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+}
+
+#click:checked ~ #watch-form {
+  opacity: 1;
+  visibility: visible;
 }
 
 #watch-text {
   display: block;
   font-size: 30px;
+  margin-top: 20px;
   color: rgb(252, 195, 73);
 }
 
@@ -30,6 +40,7 @@ h1 {
 }
 
 button {
+  margin-top: 20px;
   width: 200px;
   height: 75px;
   display: flex;
@@ -41,6 +52,8 @@ button {
   font-size: 20px;
 }
 
-#watch-form {
-  display: none;
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color:rgb(252, 195, 73);
 }
