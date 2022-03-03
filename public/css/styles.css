@@ -252,31 +252,11 @@ nav .menu-btn,
 
 /************RESPONSIVE************/
 
-/*@media(max-width:1190px){
-    .main {
-        background-size: 1150px;;
-    }
-
-    #current {
-        left: 10%;
-        top: 50;
-        transform: translate(-10%,-50%);
-    }
-
-    .current-image img {
-        height: 400px;
-    }
-} */
-
 @media(max-width: 600px) {
     nav {
         justify-content: space-evenly;
         margin: 0px auto 900vh auto;
     }
-
-   nav li a {
-       
-   }
 
     .m-heading {
         font-size: 1rem;
