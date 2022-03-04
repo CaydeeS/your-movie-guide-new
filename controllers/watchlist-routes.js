@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { movies, Movies } = require('../models')
 
 //render handlebars view on page load
 router.get("/watchlist", async (req, res) => {

@@ -197,6 +197,7 @@ nav .menu-btn,
     color: #fff;
 }
 
+
 /*************Login**********/
 .card {
     margin: 20px;
@@ -273,6 +274,10 @@ nav .menu-btn,
     }
 
     .current-image {
+        display: none;
+    }
+
+    .watch-list {
         display: none;
     }
 

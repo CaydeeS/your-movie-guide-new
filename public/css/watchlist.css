@@ -72,6 +72,11 @@ textarea {
   height: 5em;
 }
 
+img {
+  width: 100px;
+  height: 150px;
+}
+
 .button {
   /* Align buttons with the text fields */
   padding-left: 90px; /* same size as the label elements */
@@ -97,5 +102,11 @@ button:hover {
   background-color: #fff;
   color:rgb(212, 160, 47);
 
+}
+
+@media(max-width: 600px) {
+  form {
+    
+  }
 }
 
