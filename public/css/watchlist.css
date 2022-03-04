@@ -72,3 +72,10 @@ button {
      between the labels and their text fields */
   margin-left: .5em;
 }
+
+.card {
+  height: 200px;
+}
+.card-hidden {
+  display: none;
+}
