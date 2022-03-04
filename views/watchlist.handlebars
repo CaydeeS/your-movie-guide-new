@@ -3,7 +3,8 @@
 
 <div class="watch-list">
     <h1>YOUR MOVIES <span>WATCH LIST</span></h1>
-    <p class="details">Keep track of the movies you have recently watched. Add a movie to your list by fillling out the form to the right.</p>
+    <p class="details">Keep track of the movies you have recently watched. Add a movie to your list by fillling out the
+        form to the right.</p>
 </div>
 <form id="watch-form" action="/my-handling-form-page" method="post">
     <ul>
@@ -20,8 +21,10 @@
             <textarea id="text" name="user_rating"></textarea>
         </li>
         <li class="button">
-            <button type="submit">Add to Watch-List</button>
+            <button id="submit" type="submit">Add to Watch-List</button>
         </li>
     </ul>
+
+    <script src="./js/watchlist.js"></script>
+
 </form>
-    <script src='./js/main.js'></script>
