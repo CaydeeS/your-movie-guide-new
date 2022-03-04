@@ -1,9 +1,8 @@
 var submit = document.getElementById("submit");
 
 
-submit.addEventListener("click", submit);
-
-
-
-
-
+addEvent(
+    document.getElementById('submit'),
+    'click',
+    function () { alert('Succesfull!'); }
+);
