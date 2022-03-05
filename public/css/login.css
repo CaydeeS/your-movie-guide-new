@@ -5,6 +5,15 @@ header {
   color: var(--light);
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 200px;
+}
+
 .btn-no-style {
     background: none;
     border: none;
@@ -57,11 +66,4 @@ header {
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
-  }
-
-  .container {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: flex-start;
-    align-items: center;
   }
