@@ -5,6 +5,12 @@
   
 }
 
+
+img {
+width: 100px;
+height: 150px;
+}
+
 form {
   /* Center the form on the page */
   margin: 200px auto;
