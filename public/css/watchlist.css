@@ -1,7 +1,7 @@
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  color: white;
+  color: black;
   
 }
 
@@ -52,13 +52,13 @@ input,
 textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
-  font: 1em sans-serif;
+  font: 1em sans-serif black;
   margin-top: 8px;
   /* Uniform text field size */
   width: 330px;
   height: 40px;
   box-sizing: border-box;
-
+  
   /* Match form field borders */
   border: 1px solid #999;
   border-radius: 10px;
@@ -73,9 +73,14 @@ textarea:focus {
 textarea {
   /* Align multiline text fields with their labels */
   vertical-align: top;
-
+  
   /* Provide space to type some text */
   height: 5em;
+}
+
+img {
+  width: 100px;
+  height: 150px;
 }
 
 .button {
@@ -111,3 +116,10 @@ button:hover {
   color:rgb(212, 160, 47);
 
 }
+
+@media(max-width: 600px) {
+  form {
+    
+  }
+}
+

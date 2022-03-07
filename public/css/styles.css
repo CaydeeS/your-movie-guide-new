@@ -160,7 +160,11 @@ nav .menu-btn,
 }
 
 .current-image img {
-    width: 400px;
+    width: 500px;
+    height: 580px;
+    margin-top: 65px;
+    margin-left: 50px;
+    border-radius: 5px;
 }
 
 /************WATCH LIST************/
@@ -196,8 +200,6 @@ nav .menu-btn,
 .watch-list p {
     color: #fff;
 }
-
-
 
 /************RESPONSIVE************/
 
@@ -235,6 +237,10 @@ nav .menu-btn,
     }
 
     .current-image {
+        display: none;
+    }
+
+    .watch-list {
         display: none;
     }
 

@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const expbs = require('express-handlebars');
 const path = require('path');
-//directory path to layouots
+//directory path to layouts
 app.engine('handlebars', expbs({
     defaultLayout: 'main',
     layoutsDir: path.join(__dirname, 'views/layouts')
