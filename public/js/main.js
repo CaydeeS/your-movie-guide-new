@@ -15,3 +15,4 @@ app.set('view engine', 'handlebars');
 app.get('/watchlist', (req, res) => {
     res.render('watchlist', { title: 'Watch List' });
 });
+

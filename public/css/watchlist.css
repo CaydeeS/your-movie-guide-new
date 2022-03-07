@@ -5,6 +5,12 @@
   
 }
 
+
+img {
+width: 100px;
+height: 150px;
+}
+
 form {
   /* Center the form on the page */
   margin: 200px auto;
@@ -84,6 +90,13 @@ img {
 
 button {
   margin-left: .5em;
+}
+
+.card {
+  height: 200px;
+}
+.card-hidden {
+  display: none;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 180px;

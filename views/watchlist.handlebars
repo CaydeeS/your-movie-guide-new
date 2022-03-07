@@ -1,19 +1,24 @@
 {{!-- //this is where we want the form to append a card to --}}
 <link rel="stylesheet" type="text/css" href="/css/watchlist.css">
 
+{{!-- <div class="watch-list">
+    <h1>YOUR MOVIES <span>WATCH LIST</span></h1>
+    <p class="details">Keep track of the movies you have recently watched. Add a movie to your list by fillling out the form to the right.</p>
+</div> --}}
 <div class="watch-list">
-    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg">
+  <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg">
     <p class="details">
         Title: Spider-Man: No Way Home <br>
         Genre: Action <br>
         Rating: 10
     </p>
+
 </div>
-<form id="watch-form" action="/my-handling-form-page" method="post">
+<form id="watch-form" action="/submitform" method="POST">
     <ul>
         <li>
             <label id="watch-text" for="watched">Recently Watched:</label>
-            <input type="text" id="watched" name="user-watched">
+            <input type="text" id="name" name="user-watched">
         </li>
         <li>
             <label id="watch-text" for="genre">Movie Genre:</label>
@@ -21,11 +26,14 @@
         </li>
         <li>
             <label id="watch-text" for="rating">Movie Rating:</label>
-            <textarea id="text" name="user_rating"></textarea>
+            <textarea id="text" name="rating"></textarea>
         </li>
         <li class="button">
+
             <button type="submit">Add to Watch-List</button>
+            
         </li>
     </ul>
 </form>
-    <script src='./js/main.js'></script>
+    {{!-- <script src='./watchlist-routes.js'></script> --}}
+
